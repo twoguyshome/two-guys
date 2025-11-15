@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Facebook, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, MessageCircle, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -57,14 +57,9 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-semibold">Location</h3>
-                <a 
-                  href="https://maps.app.goo.gl/6J2S7T3RvczBkgRX8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
-                  325 Copper St<br />Cedar Hill, TX
-                </a>
+                <p className="text-muted-foreground text-sm">
+                  Dallas - Fort Worth
+                </p>
               </div>
             </CardContent>
           </Card>
@@ -92,16 +87,40 @@ const Contact = () => {
         <div className="mt-12 text-center space-y-6">
           <div>
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-            <a
-              href="https://web.facebook.com/p/2-GUYS-Home-Repair-61557107761726"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" size="lg">
-                <Facebook className="mr-2 h-5 w-5" />
-                Visit Our Facebook Page
-              </Button>
-            </a>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="https://web.facebook.com/p/2-GUYS-Home-Repair-61557107761726"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg">
+                  <Facebook className="mr-2 h-5 w-5" />
+                  Facebook
+                </Button>
+              </a>
+              <a
+                href="https://www.instagram.com/homerepair.2guys"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg">
+                  <Instagram className="mr-2 h-5 w-5" />
+                  Instagram
+                </Button>
+              </a>
+              <a
+                href="https://www.tiktok.com/@homerepair2g"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg">
+                  <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                  TikTok
+                </Button>
+              </a>
+            </div>
           </div>
 
         </div>
